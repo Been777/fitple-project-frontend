@@ -18,7 +18,9 @@ import OwnerProfilePage from '@/views/OwnerProfilePage.vue';
 import StoreEditPage from '@/views/StoreEditPage.vue';
 import TrainerEditPage from '@/views/TrainerEditPage.vue';
 import StoreManagementPage from '@/views/StoreManagementPage.vue';
+import StoreUpdatePage from '@/views/StoreUpdatePage.vue';
 import TrainerProfilePage  from "@/views/TrainerProfilePage.vue";
+
 
 const routes = [
   {
@@ -111,6 +113,11 @@ const routes = [
     name: 'storeedit',
     component: StoreEditPage,
   },
+  {
+      path: '/store/owner/:id/edit',
+      name: 'store-update',
+      component: StoreUpdatePage,
+    },
   {
     path: '/trainer/owner/:id',
     name: 'traineredit',
